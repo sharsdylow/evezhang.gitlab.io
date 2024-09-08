@@ -7,6 +7,8 @@ import MultiPageRoutes from './MultiPageRoutes';
 import { singlePage } from '../info/Info';
 import SinglePageRoutes from './SinglePageRoutes';
 import useScrollObserver from '../hooks/useScrollObserver';
+import { info } from '../info/Info';
+import SocialIcon from './home/SocialIcon';
 
 export default function BaseLayout() {
    const location = useLocation()
@@ -47,6 +49,11 @@ export default function BaseLayout() {
                {singlePage ? <SinglePageRoutes refs={{refHome, refAbout, refPortfolio}}/> : <MultiPageRoutes />}
             </Grid>
             <Grid item>
+               <Box display={'flex'} gap={'1.5rem'} justifyContent={'center'} fontSize={{xs: '2rem', md: '2.5rem'}}>
+                  {info.socials.map((social, index) => (
+                     <SocialIcon key={index} link={social.link} icon={social.icon} label={social.label} />
+                  ))}
+               </Box>
                <Box component={'footer'} display={'flex'} flexDirection={'column'} alignItems={'center'}
                   py={'1.5rem'} sx={{ opacity: 0.7 }} width={'100%'}>
                   <p>template inspired by <a href={'https://paytonpierce.dev'}>Payton Pierce</a></p>

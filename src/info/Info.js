@@ -1,9 +1,8 @@
 import self from "../img/self.png"
-import mock1 from "../img/mock1.png"
+import project1 from "../img/project1.png"
 import mock2 from "../img/mock2.png"
 import mock3 from "../img/mock3.png"
 import mock4 from "../img/mock4.png"
-import mock5 from "../img/mock5.png"
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
@@ -107,8 +106,11 @@ export const info = {
         {
             title: "Project 1",
             live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
-            image: mock1
+            source: "https://github.com/sharsdylow/Calit2", // this should be a link to the **repository** of the project, where the code is hosted.
+            image: project1,
+            intro: "A React-based website for an industrial IoT system \
+            featuring more than 40 sensor nodes to monitor the real-time status of semiconductor manufacturing machines, \
+            enabling operators to track facilities’ states 24/7."
         },
         {
             title: "Project 2",
@@ -128,11 +130,5 @@ export const info = {
             source: "https://github.com/paytonjewell",
             image: mock4
         },
-        {
-            title: "Project 5",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock5
-        }
     ]
 }

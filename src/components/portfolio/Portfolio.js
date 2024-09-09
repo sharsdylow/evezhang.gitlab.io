@@ -1,18 +1,16 @@
 import React from 'react';
-import PortfolioBlock from "./PortfolioBlock";
-import {Box, Grid} from "@mui/material";
+import {Box} from "@mui/material";
 import {info} from "../../info/Info";
+import PortfolioCard from './PortfolioCard';
 
 export default function Portfolio({innerRef}) {
     return (
-        <Box id={'portfolio'} ref={innerRef}>
-            <Grid container display={'flex'} justifyContent={'center'}>
-                {info.portfolio.map((project, index) => (
-                   <Grid item xs={12} md={6} key={index}>
-                       <PortfolioBlock image={project.image} live={project.live} source={project.source} title={project.title} />
-                   </Grid>
-                ))}
-            </Grid>
+        <Box id={'portfolio'} ref={innerRef} display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'}>
+            {info.portfolio.map((project, index) => (
+                <Box mb={'4rem'} width={{xs: '80%', md: '50%'}} component={'card'}>
+                    <PortfolioCard project={project} />
+                </Box>
+            ))}
         </Box>
     );
 };

@@ -3,10 +3,25 @@
 .dark {
     background-color: $terminal !important;
     transition: all 400ms;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.4) !important;
 }
 
 .light {
     background-color: $white !important;
     transition: all 400ms;
 }
+
+i {
+    padding-left: 0.5rem;
+  
+    &.red {
+      color: $red;
+    }
+  
+    &.amber {
+      color: $yellow;
+    }
+  
+    &.green {
+      color: $green;
+    }
+  }

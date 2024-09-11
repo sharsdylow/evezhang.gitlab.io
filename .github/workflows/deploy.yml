@@ -13,15 +13,15 @@ jobs:
     
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Set up Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
-        node-version: '21.6.2'
+        node-version: 'lts/*'
 
     - name: Cache dependencies
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       with:
         path: ~/.npm
         key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -40,8 +40,11 @@ jobs:
     - name: Copy CNAME file
       run: cp CNAME build/CNAME
 
+    - name: Copy 404.html
+      run: cp public/404.html build/404.html
+
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4.6.4
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: gh-pages
         folder: build

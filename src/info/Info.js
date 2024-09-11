@@ -49,6 +49,11 @@ export const info = {
         {
             emoji: "📧",
             text: "xuyinz13@gmail.com"
+        },
+        {
+            emoji: "📝",
+            text: "resume",
+            link: "https://github.com/sharsdylow/sharsdylow.github.io/blob/main/Resume_Eve_Zhang_SDE_August.pdf?raw=true"
         }
     ],
     socials: [

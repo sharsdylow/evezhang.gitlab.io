@@ -11,7 +11,7 @@ import classNames from "classnames";
 const iconClass = "fa fa-circle";
 
 export default function PortfolioCard({project}) {
-  const { image, live, source, title, intro } = project;
+  const { image, source, title, intro } = project;
   let detectedDarkMode = JSON.parse(localStorage.getItem('darkMode'));
   return (
 	<Box component={'section'} className={classNames(Style.terminal, Style.shadowed)} borderRadius={'0.5rem'} mb={'4rem'}>

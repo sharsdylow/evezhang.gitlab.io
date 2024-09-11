@@ -72,10 +72,10 @@ export const info = {
 // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: "Hello! I'm Eve. I'm a master student graduated from UC Irvine recently. \
-    I studied computer engineering, and I have experience with software development for two years. \
-    I enjoy spending time with my cats. \
-    You should hire me!",
+    bio: "Hello! I'm Eve. I'm a master student graduated from UC Irvine recently. " +
+    "I studied computer engineering, and I have experience with software development for two years. " +
+    "I enjoy spending time with my cats. " +
+    "You should hire me!",
     skills:
         {
             proficientWith: ['javascript', 'react', 'git', 'node.js', 'python', 'SQL', 'CSS'],
@@ -108,9 +108,9 @@ export const info = {
             live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
             source: "https://github.com/sharsdylow/Calit2", // this should be a link to the **repository** of the project, where the code is hosted.
             image: project1,
-            intro: "A React-based website for an industrial IoT system \
-            featuring more than 40 sensor nodes to monitor the real-time status of semiconductor manufacturing machines, \
-            enabling operators to track facilities’ states 24/7."
+            intro: "A React-based website for an industrial IoT system " +
+            "featuring more than 40 sensor nodes to monitor the real-time status of semiconductor manufacturing machines, " +
+            "enabling operators to track facilities’ states 24/7."
         },
         {
             title: "Project 2",
